@@ -18,6 +18,7 @@ export const trackVisitor = async (req, res) => {
     const geo = geoResponse.data;
 
     await Visitor.create({
+      siteName: req.body.siteName,
       ip: cleanIp,
       city: geo.city,
       country: geo.country,
