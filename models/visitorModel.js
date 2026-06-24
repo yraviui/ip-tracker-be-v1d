@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 const visitorSchema = new mongoose.Schema(
   {
     ip: { type: String, required: true },
+    siteName: String,
     city: String,
     country: String,
     countryCode: String,
